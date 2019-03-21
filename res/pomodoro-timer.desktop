@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Pomodoro Timer
+GenericName=pomodoro-timer
+Comment=The Pomodoro timer implemented in Qt
+Exec=pomodoro-timer
+Icon=pomodoro-timer
+Terminal=false
+Type=Application
+Categories=Tools;Qt;

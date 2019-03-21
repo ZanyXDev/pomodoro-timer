@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ts/pomodoro-timer_ru_RU.qm</file>
+        <file>res/fonts/DroidSansFallback.ttf</file>
+    </qresource>
+</RCC>
