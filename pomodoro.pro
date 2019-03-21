@@ -27,30 +27,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-OBJECTS_DIR = build/
-MOC_DIR = build/
-UI_DIR = ui/
-
-lupdate_only {
 SOURCES += \
 	src/settings.cpp \
         src/main.cpp \
         src/mainwindow.cpp
-}
+
 
 HEADERS += \
 	src/settings.h \
         src/mainwindow.h
 
 CONFIG += \
-	console \
-	c++11
+        console
 
 RESOURCES += \
     pomodoro.qrc
 
 # Default rules for deployment.
-include(deployment.pri)
+#include(deployment.pri)
 
 
 TRANSLATIONS += \

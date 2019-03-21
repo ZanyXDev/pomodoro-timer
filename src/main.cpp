@@ -1,11 +1,19 @@
-#include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
+#include <QDebug>
 
+#include "mainwindow.h"
 #include "settings.h"
+
 int main(int argc, char *argv[])
 {
+    Q_INIT_RESOURCE(pomodoro);
+
     QApplication app(argc, argv);
+    QCoreApplication::setOrganizationName("Zany Inc.");
+    QCoreApplication::setApplicationName("Pomodoro-Timer");
+
+
     Settings settings(0, "Pomodoro-Timer", "Pomodoro-Timer");
     settings.setVersion(QString(APP_VERSION));
 
